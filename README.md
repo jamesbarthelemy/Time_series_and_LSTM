@@ -27,6 +27,11 @@ In this project, implementing the attached arXiv paper, I will present to you th
 
 <img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_dataset.png" width="1200">
 
+1. The dataset used comes from the site https://www.abcbourse.com/
+2. It contains the daily evolution of the EDF stock market price
+3. From January 2006 to February 2022
+4. 4136 lines / 6 variables
+
 ## Data preparation
 
 <img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_preparation.png" width="1200">
@@ -35,17 +40,20 @@ In this project, implementing the attached arXiv paper, I will present to you th
 
 <img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_features.png" width="1200">
 
-## Data analysis
-
-<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_analysis.png" width="1200">
-
 ### Target
 
 <img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_target.png" width="1200">
 
+1. The target variable takes the values 0 or 1
+2. It is worth 0 if the closing price of the security decreases the next day
+3. 1 if it increases
+4. The 2 target classes are almost perfectly balanced
+
 ### Seasonality
 
 <img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_season.png" width="1200">
+
+There is low seasonality in the data and the trend does not contain a recurring pattern
 
 # Baseline
 
@@ -77,8 +85,19 @@ In this project, implementing the attached arXiv paper, I will present to you th
 
 ## Final result
 
-<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_final.png" width="1200">
+<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_final1.png" width="1200">
+<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_final2.png" width="1200">
 
 # Conclusion and perspectives
 
-<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_conclusion.png" width="1200">
+The final performance of the prototype is slightly better than the initial performance of the baseline but still remains modest and would not allow use in production.
+
+This can certainly be explained by:
+1. The relatively small amount of data available for training the model compared to the complexity of the problem.
+2. Data focused only on one stock in a much larger market and likely with hidden correlations and dependencies.
+3. Data with low seasonality and no recurring pattern in the trend.
+
+The prospects for trying to improve this situation would be:
+1. Expand sources of financial data to include other securities, indices related to the industrial sector, local (relating to the local market) and international indices, currencies.
+2. Also take into account technical information and/or comments on this security, its market.
+3. Take local and international news into account.
