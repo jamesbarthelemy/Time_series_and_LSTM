@@ -17,43 +17,57 @@ In this project, implementing the attached arXiv paper, I will present to you th
 
 <img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_desc.png" width="1200">
 
+[Back to table of contents](#table-of-contents)
+
 # Process description
 
 <img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_proc.png" width="1200">
+
+[Back to table of contents](#table-of-contents)
 
 # Data exploration
 
 ## Dataset description
 
-<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_dataset.png" width="1200">
+<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_dataset.png" width="600">
 
 1. The dataset used comes from the site https://www.abcbourse.com/
 2. It contains the daily evolution of the EDF stock market price
 3. From January 2006 to February 2022
 4. 4136 lines / 6 variables
 
+[Back to table of contents](#table-of-contents)
+
 ## Data preparation
 
-<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_preparation.png" width="1200">
+<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_preparation.png" width="600">
+
+[Back to table of contents](#table-of-contents)
 
 ## Feature engineering
 
-<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_features.png" width="1200">
+<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_features.png" width="600">
+
+[Back to table of contents](#table-of-contents)
 
 ### Target
 
-<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_target.png" width="1200">
+<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_target.png" width="600">
 
 1. The target variable takes the values 0 or 1
 2. It is worth 0 if the closing price of the security decreases the next day
 3. 1 if it increases
 4. The 2 target classes are almost perfectly balanced
 
+[Back to table of contents](#table-of-contents)
+
 ### Seasonality
 
-<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_season.png" width="1200">
+<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_season.png" width="600">
 
 There is low seasonality in the data and the trend does not contain a recurring pattern
+
+[Back to table of contents](#table-of-contents)
 
 # Baseline
 
@@ -61,9 +75,13 @@ There is low seasonality in the data and the trend does not contain a recurring 
 
 <img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_baseline_desc.png" width="1200">
 
+[Back to table of contents](#table-of-contents)
+
 ## Result
 
-<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_baseline_res.png" width="1200">
+<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_baseline_res.png" width="600">
+
+[Back to table of contents](#table-of-contents)
 
 # Prototype
 
@@ -71,22 +89,32 @@ There is low seasonality in the data and the trend does not contain a recurring 
 
 <img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_arxiv.png" width="1200">
 
+[Back to table of contents](#table-of-contents)
+
 ## Model description
 
 <img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_model.png" width="1200">
 
+[Back to table of contents](#table-of-contents)
+
 ## Results
 
-<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_results.png" width="1200">
+<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_results.png" width="600">
+
+[Back to table of contents](#table-of-contents)
 
 ## Optimization
 
-<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_tuning.png" width="1200">
+<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_tuning.png" width="600">
+
+[Back to table of contents](#table-of-contents)
 
 ## Final result
 
-<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_final1.png" width="1200">
-<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_final2.png" width="1200">
+<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_final1.png" width="600">
+<img src="https://raw.githubusercontent.com/jamesbarthelemy/images/main/p7_final2.png" width="600">
+
+[Back to table of contents](#table-of-contents)
 
 # Conclusion and perspectives
 
@@ -101,3 +129,5 @@ The prospects for trying to improve this situation would be:
 1. Expand sources of financial data to include other securities, indices related to the industrial sector, local (relating to the local market) and international indices, currencies.
 2. Also take into account technical information and/or comments on this security, its market.
 3. Take local and international news into account.
+
+[Back to table of contents](#table-of-contents)
